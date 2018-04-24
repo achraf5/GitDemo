@@ -1,0 +1,9 @@
+*** Settings ***
+Suite Teardown    Close All Browsers
+Library           Selenium2Library
+
+*** Test Cases ***
+TestDemoSuite
+    Open Browser    https://www.google.com/    FF
+    Input Text    lst-ib    wac
+    Click Element    btnK
